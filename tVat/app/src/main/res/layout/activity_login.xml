@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/white"
+    tools:context="sr.unasat.tvat.activities.LoginActivity">
+
+    <Button
+        android:text="connect with facebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/facebookButtonLogin"
+        android:layout_below="@+id/loginButtonLogin"
+        android:layout_alignLeft="@+id/passwordLoginText"
+        android:layout_alignStart="@+id/passwordLoginText" />
+
+    <Button
+        android:text="Registreren"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/googleButtonLogin"
+        android:id="@+id/registerButtonLogin"
+        android:onClick="registerScreen"
+        android:layout_alignRight="@+id/googleButtonLogin"
+        android:layout_alignEnd="@+id/googleButtonLogin"
+        android:layout_alignLeft="@+id/googleButtonLogin"
+        android:layout_alignStart="@+id/googleButtonLogin" />
+
+    <Button
+        android:text="connect with twitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/twitterButtonLogin"
+        android:layout_below="@+id/loginButtonLogin"
+        android:layout_alignLeft="@+id/facebookButtonLogin"
+        android:layout_alignStart="@+id/facebookButtonLogin"
+        android:layout_marginTop="49dp"
+        android:layout_alignRight="@+id/facebookButtonLogin"
+        android:layout_alignEnd="@+id/facebookButtonLogin" />
+
+    <Button
+        android:text="connect with google"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/googleButtonLogin"
+        android:layout_below="@+id/twitterButtonLogin"
+        android:layout_alignLeft="@+id/twitterButtonLogin"
+        android:layout_alignStart="@+id/twitterButtonLogin"
+        android:layout_alignRight="@+id/twitterButtonLogin"
+        android:layout_alignEnd="@+id/twitterButtonLogin" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Wachtwoord"
+        android:ems="10"
+        android:id="@+id/passwordLoginText"
+        android:layout_above="@+id/loginButtonLogin"
+        android:layout_alignLeft="@+id/userNameLoginText"
+        android:layout_alignStart="@+id/userNameLoginText"
+        android:layout_marginBottom="13dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Gebruikersnaam"
+        android:ems="10"
+        android:id="@+id/userNameLoginText"
+        android:layout_alignBottom="@+id/passwordLoginText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="58dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/tvatlogo"
+        android:layout_above="@+id/userNameLoginText"
+        android:id="@+id/imageView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="53dp"
+        android:layout_marginStart="53dp"
+        android:background="@color/white"
+        android:textColor="@color/dGold"
+        android:onClick="loginUser"
+
+        android:id="@+id/loginButtonLogin"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/facebookButtonLogin"
+        android:layout_alignStart="@+id/facebookButtonLogin" />
+
+</RelativeLayout>

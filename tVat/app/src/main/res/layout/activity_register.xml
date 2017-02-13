@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="sr.unasat.tvat.activities.RegisterActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Voornaam"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:id="@+id/firstNameRegText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_below="@+id/passwordRegText"
+        android:layout_alignLeft="@+id/passwordRegText"
+        android:layout_alignStart="@+id/passwordRegText"
+        android:layout_marginTop="12dp"
+        android:id="@+id/confirmPasswordRegText"
+        android:hint="Bevestig wachtwoord"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:layout_below="@+id/confirmPasswordRegText"
+        android:layout_alignRight="@+id/confirmPasswordRegText"
+        android:layout_alignEnd="@+id/confirmPasswordRegText"
+        android:layout_marginTop="17dp"
+        android:id="@+id/emailRegText"
+        android:hint="Email adres"/>
+
+    <Button
+        android:text="Registreren"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:onClick="registerUser"
+        android:id="@+id/registerButtonReg" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/passwordRegText"
+        android:hint="Wachtwoord"
+        android:layout_below="@+id/userNameRegText"
+        android:layout_alignLeft="@+id/userNameRegText"
+        android:layout_alignStart="@+id/userNameRegText"
+        android:layout_marginTop="14dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:hint="Gebruikersnaam"
+        android:id="@+id/userNameRegText"
+        android:layout_below="@+id/lastNameRegText"
+        android:layout_alignLeft="@+id/lastNameRegText"
+        android:layout_alignStart="@+id/lastNameRegText"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Achternaam"
+        android:ems="10"
+        android:id="@+id/lastNameRegText"
+        android:layout_below="@+id/firstNameRegText"
+        android:layout_alignLeft="@+id/firstNameRegText"
+        android:layout_alignStart="@+id/firstNameRegText"
+        android:layout_marginTop="10dp" />
+
+</RelativeLayout>
